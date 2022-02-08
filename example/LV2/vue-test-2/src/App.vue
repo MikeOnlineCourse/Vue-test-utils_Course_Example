@@ -3,6 +3,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import AddCount from "./components/AddCount.vue";
 import UserList from "./components/UserList.vue";
 import CardBox from "./components/CardBox";
+import PhotoItem from "./components/PhotoItem";
 export default {
   name: "App",
   components: {
@@ -10,6 +11,7 @@ export default {
     AddCount,
     UserList,
     CardBox,
+    PhotoItem,
   },
 };
 </script>
@@ -23,6 +25,7 @@ export default {
     <CardBox v-for="i in 4" :key="i" />
   </div>
   <UserList />
+  <PhotoItem />
 </template>
 
 <style>

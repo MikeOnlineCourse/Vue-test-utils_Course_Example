@@ -8,7 +8,7 @@ export default {
     Content,
   },
   setup() {
-    const isOpenContent = ref(false);
+    const isOpenContent = ref(true);
     return {
       isOpenContent,
     };

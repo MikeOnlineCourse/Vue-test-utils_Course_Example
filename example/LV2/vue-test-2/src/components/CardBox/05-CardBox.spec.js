@@ -11,6 +11,6 @@ describe("CardBox.vue", () => {
 
     // 要直接抓 component 可以使用 findComponent
     expect(wrapper.findComponent(ImageBox).exists()).toBe(true);
-    expect(wrapper.findComponent(Content).exists()).toBe(false);
+    expect(wrapper.findComponent(Content).exists()).toBe(true);
   });
 });
