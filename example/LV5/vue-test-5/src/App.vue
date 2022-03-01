@@ -21,10 +21,20 @@ export default {
 };
 </script>
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img class="logo" alt="Vue logo" src="./assets/logo.png" />
   <TimeShow />
   <button @click="fetchUserData">get me</button>
   <ShowData :data="data" />
 </template>
 
-<style></style>
+<style>
+.logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+button {
+  display: block;
+  margin: 0 auto;
+}
+</style>

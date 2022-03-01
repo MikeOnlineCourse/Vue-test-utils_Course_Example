@@ -93,7 +93,7 @@ export default {
         v-for="item in searchData[searchText]"
         :key="item.title"
       >
-        <a href="javascript:;" target="_blank" class="title">
+        <a href="javascript:;" class="title">
           {{ item.title }}
         </a>
         <a :href="item.link" target="_blank" class="link">{{ item.link }}</a>

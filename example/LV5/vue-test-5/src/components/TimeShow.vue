@@ -20,4 +20,8 @@ export default {
   </h1>
 </template>
 
-<style></style>
+<style scoped>
+  h1 {
+    text-align: center;
+  }
+</style>

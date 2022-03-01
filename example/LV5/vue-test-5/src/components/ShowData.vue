@@ -24,16 +24,23 @@ export default {
 };
 </script>
 <template>
+  <p class="newTie">{{ newData }}</p>
   <pre>
     {{ props.data }}
   </pre>
-  <p class="newTie">{{ newData }}</p>
 </template>
 
 <style>
 pre {
+  width: 800px;
   background-color: rgb(218, 218, 218);
   border: 1px solid rgb(163, 163, 163);
   padding: 20px;
+  margin: 20px auto 20px auto;
+}
+.newTie{
+  display: block;
+  width: 800px;
+  margin: 0 auto;
 }
 </style>
