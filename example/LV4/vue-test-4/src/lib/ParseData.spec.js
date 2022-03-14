@@ -13,12 +13,12 @@ const searchData = {
 const colorArr = ["blue", "white", "black", "yellow"];
 
 describe("ParseData.js", () => {
-  it("test toContain Expect", async () => {
+  it("test toContain Expect", () => {
     const newColor = "red";
     expect(ColorArrPush(colorArr, newColor)).toContain(newColor);
   });
 
-  it("test toContainEqual Expect", async () => {
+  it("test toContainEqual Expect", () => {
     const context = {
       title: "地震好可怕",
       link: "https://www.cwb.gov.tw/V7/earthquake/",
