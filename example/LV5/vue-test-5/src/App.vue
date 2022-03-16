@@ -16,6 +16,7 @@ export default {
       const res = await getUserData("MikeCheng1208");
       data.value = res.data;
     };
+
     return { fetchUserData, data };
   },
 };
