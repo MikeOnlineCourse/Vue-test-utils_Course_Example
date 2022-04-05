@@ -44,4 +44,12 @@ const mockData = [
   },
 ];
 
-describe("Courses", () => {});
+describe("Courses", () => {
+  it("courses onMounted fetch api data remder list", () => {
+    const wrapper = mount(Courses);
+  });
+
+  it("click course push page", () => {
+    const wrapper = mount(Courses);
+  });
+});
