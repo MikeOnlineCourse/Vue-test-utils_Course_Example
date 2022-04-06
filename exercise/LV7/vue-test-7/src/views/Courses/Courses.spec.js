@@ -1,5 +1,4 @@
-import { mount, flushPromises } from "@vue/test-utils";
-import { useRoute, useRouter } from "vue-router";
+import { mount } from "@vue/test-utils";
 import Courses from "./index.vue";
 
 const mockData = [
