@@ -1,5 +1,5 @@
 import { mount, flushPromises } from "@vue/test-utils";
-import { useRoute, useRouter } from "vue-router";
+import { useRouter } from "vue-router";
 import Courses from "./index.vue";
 
 const mockData = [
@@ -45,12 +45,9 @@ const mockData = [
 ];
 
 jest.mock("vue-router", () => ({
-  useRoute: jest.fn(() => ({
-    path: "",
-  })),
   useRouter: jest.fn(() => ({
-    push: () => {},
-    resolve: () => {},
+    push: jest.fn(),
+    resolve: jest.fn(),
   })),
 }));
 
@@ -60,10 +57,6 @@ jest.mock("axios", () => ({
 
 describe("Courses", () => {
   it("courses onMounted fetch api data remder list", async () => {
-    // 設定一開始 path 的路徑
-    useRoute.mockImplementation(() => ({
-      path: "/courses",
-    }));
     const wrapper = mount(Courses);
     await flushPromises();
 
@@ -72,9 +65,6 @@ describe("Courses", () => {
   });
 
   it("click course push page", async () => {
-    useRoute.mockImplementation(() => ({
-      path: "/courses",
-    }));
     const push = jest.fn();
     useRouter.mockImplementation(() => ({
       push,
