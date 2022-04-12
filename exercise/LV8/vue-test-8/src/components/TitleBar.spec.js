@@ -2,5 +2,7 @@ import { mount } from "@vue/test-utils";
 import TitleBar from "./TitleBar.vue";
 
 describe("TitleBar.vue", () => {
-  const wrapper = mount(TitleBar);
+  it("renders slots content", () => {
+    const wrapper = mount(TitleBar);
+  });
 });
